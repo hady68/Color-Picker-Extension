@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Color Picker (Google Chrome Extension)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Installation Steps
 
-In the project directory, you can run:
+Follow these steps to install and use the Color Picker Chrome Extension:
 
-### `npm start`
+1. **Download and Extract the Extension**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   - [Download the extension as a ZIP file](/Color_picker_extension.zip) and extract it to your local system. You can also clone the repository using Git:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+     ```
+     git clone git@github.com:codeAlok/color-picker-chrome-extension.git
+     ```
 
-### `npm test`
+2. **Enable Developer Mode in Chrome**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   - Open Google Chrome.
+   - Go to Chrome settings.
+   - Select the Extensions tab.
+   - Turn on Developer mode.
 
-### `npm run build`
+![image](https://github.com/hady68/Color-Picker-Extension/assets/64458111/747c8cda-4395-4a8a-af73-6a304b5552f3)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3. **Load the Extension**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Click on "Load unpacked" in the Extensions page.
+   - Select the `color-picker-chrome-extension` folder from your local repository.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Enable the Extension**
 
-## Learn More
+   - If the extension is not enabled, enable it.
+  
+   ![image](https://github.com/hady68/Color-Picker-Extension/assets/64458111/6d93e6be-befd-43e8-b92f-196c0bca8e6c)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Using the Extension**
 
-### Code Splitting
+   - Open any tab in Chrome (other than the Google settings or homepage).
+   - Click on the extension icon in the toolbar and select "Color Picker."
+   - Click "Pick Color," and then click anywhere on your browser or desktop to pick a color.
+   - The Hex code of the selected color is copied to your clipboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://github.com/hady68/Color-Picker-Extension/assets/64458111/087a03ad-63d7-4835-9e5f-f31793c605c8)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+6. **Getting Help**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Feel free to reach out for guidance, support, or help.
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Open any tab in Chrome (other than the Google settings or homepage).
+2. Click on the extension icon in the toolbar and select "Color Picker."
+3. Click "Pick Color," and then click anywhere on your browser or desktop to pick a color.
+4. The Hex code of the selected color is copied to your clipboard.
 
-### Deployment
+## Support and Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you encounter any issues or have questions, please don't hesitate to ask for help or provide feedback. Your input is valuable!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was developed with the help of YouTube tutorials and documentation.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Note:** Learned and implemented with the help of YouTube and Reading Docs.
