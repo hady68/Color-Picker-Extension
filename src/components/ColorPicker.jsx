@@ -14,6 +14,8 @@ const ColorPicker = () => {
         a: '1'
     })
 
+    const [isCopied, setIsCopied] = useState(false); // State to track if color is copied
+
     const handleClick = () => {
         setdisplayColor(!displayColor)
     };
@@ -25,6 +27,16 @@ const ColorPicker = () => {
     const handleChange = (color) => {
         setcolor(color.rgb)
     }
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(`rgba(${color.r}, ${color.g}, ${color.b}, ${color.a})`);
+        setIsCopied(true);
+    
+        // Reset the copied notice after a delay 
+        setTimeout(() => {
+          setIsCopied(false);
+        }, 1500);
+      };
 
     const styles = reactCSS({
         'default': {
@@ -63,15 +75,19 @@ const ColorPicker = () => {
                 background: 'white',
                 marginTop: '20px',
                 padding: '10px',
-                fontSize: '18px'
+                fontSize: '20px',
+                borderRadius: '5px',
+                fontWeight: 'bold'
+            
+                
             },
             btn: {
                 cursor: 'pointer',
-                padding: '10px 20px',
-                marginTop: '20px',
+                padding: '15px 25px',
+                marginTop: '40px',
                 border: 'none',
                 borderRadius: '5px',
-                fontSize: '18px'
+                fontSize: '20px'
             }
         }
     })
@@ -79,7 +95,7 @@ const ColorPicker = () => {
     return (
         <>
             <div style={styles.bg}>
-                <h2 style={{ color: 'white' }}>React-Chrome-Extension</h2>
+                <h2 style={{ color: 'white' }}>React Color Picker</h2>
                 <div style={styles.swatch} onClick={handleClick}>
                     <div style={styles.color} />
                 </div>
@@ -92,11 +108,15 @@ const ColorPicker = () => {
                     rgba({color.r}, {color.g}, {color.b}, {color.a})
                 </div>
 
-                <button style={styles.btn} onClick={() => { navigator.clipboard.writeText(`rgba(${color.r}, ${color.g}, ${color.b}, ${color.a})`) }}>copy</button>
-
-            </div>
+               {/* Combined button functionality */}
+        <button style={styles.btn} onClick={() => {
+          handleCopy(); // Copy the color value to clipboard
+        }}>
+          {isCopied ? 'Copied to Clipboard' : 'Copy'}
+        </button>
+      </div>
         </>
-    )
+    );
 }
 
 export default ColorPicker
